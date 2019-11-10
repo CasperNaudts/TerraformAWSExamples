@@ -20,10 +20,10 @@ subnet = {
 ami = {
   # The CentOS AMI should be HVM: https://wiki.centos.org/Cloud/AWS
   # (Make sure the AMI is for the proper region.)
-  id   = "ami-01d5b8c6e4958a724"
+  id   = "ami-0015b9ef68c77328d"
   user = "centos"
 }
 
 instance_type = "t2.micro"
 
-web_server_count = 2
+web_server_count = 3

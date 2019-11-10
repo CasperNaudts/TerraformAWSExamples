@@ -36,7 +36,8 @@ data "aws_ami" "ubuntu" {
 resource "aws_instance" "web" {
   ami           = "${data.aws_ami.ubuntu.id}"
   instance_type = "t2.micro"
-  
+  key_name = "pxl" # Add keypair for login
+
   tags = {
     Name = "Latest Ubuntu 18.04 Server" # Yes, this tag starts with a capital letter N.
   }
